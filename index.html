@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Research, data science, teaching, writing, and interdisciplinary work portfolio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="language-screen" id="language-screen" hidden>
+  <div class="language-box" role="dialog" aria-modal="true" aria-labelledby="language-title">
+    <p class="eyebrow">WELCOME · BIENVENIDO · BIENVENUE</p>
+    <h1 id="language-title">Choose your language.</h1>
+    <p>Select a language to explore this portfolio.</p>
+    <div class="language-buttons">
+      <button type="button" data-language="en">English</button>
+      <button type="button" data-language="es">Español</button>
+      <button type="button" data-language="fr">Français</button>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <a class="wordmark" href="index.html">Portfolio<span>.</span></a>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html#home" data-i18n="navHome">Home</a>
+    <a href="index.html#about" data-i18n="navAbout">About</a>
+    <a href="index.html#timeline" data-i18n="navTimeline">Timeline</a>
+    <a href="index.html#coursework" data-i18n="navCoursework">Coursework</a>
+    <a href="index.html#education-funding">Education</a>
+    <a href="index.html#volunteering">Volunteering</a>
+    <a href="index.html#mentors">Mentors</a>
+    <a href="index.html#skills" data-i18n="navSkills">Skills</a>
+    <a href="index.html#research" data-i18n="navResearch">Research</a>
+    <a href="index.html#writing" data-i18n="navWriting">Writing</a>
+    <a href="index.html#contact" data-i18n="navContact">Contact</a>
+  </nav>
+  <button class="change-language" id="change-language" type="button">Language / Idioma / Langue</button>
+</header>
+<main>
+  <section id="home" class="hero section-wrap">
+    <div>
+      <p class="eyebrow" data-i18n="heroEyebrow">RESEARCH · DATA · PEOPLE</p>
+      <h1>Research-minded.<br>Data-driven.<br><span>Curious by design.</span></h1>
+      <p class="hero-intro" data-i18n="heroIntro">A portfolio bringing together quantitative research, data science, teaching, and writing.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#timeline" data-i18n="exploreJourney">Explore my journey</a>
+        <a class="text-link" href="#contact" data-i18n="getInTouch">Get in touch ↗</a>
+      </div>
+      <p class="privacy-note">Shared by direct link. This page requests that compliant search engines not index it; it is not access-restricted.</p>
+    </div>
+    <div class="hero-visual">
+      <div class="photo-frame" id="photo-frame">
+        <img src="images/portfolio.jpeg" alt="Portfolio portrait" onerror="this.hidden=true;document.getElementById('photo-frame').classList.add('photo-placeholder')">
+        <div class="photo-placeholder-label">IMAGE PLACEHOLDER<span>Add your image to images/portfolio.jpeg</span></div>
+      </div>
+      <div class="visual-caption"><span class="status-dot"></span> RESEARCH · DATA · WRITING</div>
+    </div>
+  </section>
+
+  <section id="about" class="section-wrap content-section">
+    <div class="section-heading">
+      <p class="eyebrow">01 / ABOUT</p>
+      <h2 data-i18n="aboutHeading">A multidisciplinary path</h2>
+    </div>
+    <div class="about-grid">
+      <p class="lead">Connecting biomedical engineering, biostatistics, public health, and data science.</p>
+      <div class="about-detail">
+        <p>I completed a degree in Biomedical Engineering at the University of Mumbai and a thesis-based graduate degree in Biostatistics at New York University (NYU). I was offered admission to a Public Health PhD program at Oregon State University; not pursued after January 2025.</p>
+        <p>My interests include stitching data sets for interdisciplinary public health research and data science (use of machine learning and artificial intelligence) to scale fairness aware machine learning models.</p>
+        <p class="small-note">For more details, see the <a href="en/about.html">About page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="section-wrap content-section">
+    <div class="section-heading">
+      <p class="eyebrow">02 / TIMELINE</p>
+      <h2 data-i18n="timelineHeading">A connected journey</h2>
+      <p class="section-description">Select a node to read more. Dates and descriptions should be checked against official records before public release.</p>
+    </div>
+    <div class="circuit-board">
+      <div class="circuit-line" aria-hidden="true"></div><div class="circuit-line circuit-line-b" aria-hidden="true"></div>
+      <button class="circuit-node" type="button" aria-expanded="false" data-title="Biomedical Engineering" data-detail="Bachelor's degree in Engineering from University of Mumbai. This was full-time 4 year engineering degree coursework attended in person.">
+        <span class="node-year">2012–2017 ·</span><strong>Biomedical Engineering</strong><small>University of Mumbai</small>
+      </button>
+      <button class="circuit-node" type="button" aria-expanded="false" data-title="Biomedical Engineering" data-detail="Years taken off to deal with some personal circumstances">
+        <span class="node-year">2018–2021 ·</span><strong>Years taken off to deal with some personal circumstances</strong><small></small>
+      </button>
+      <button class="circuit-node" type="button" aria-expanded="false" data-title="Biostatistics" data-detail="Thesis-based graduate degree in Biostatistics at New York University. This was a full-time 2 years STEM degree coursework attended in person.">
+        <span class="node-year">2022–2024 ·</span><strong>Biostatistics (Thesis) </strong><small>New York University</small>
+      </button>
+      <button class="circuit-node" type="button" aria-expanded="false" data-title="Public Health PhD admission" data-detail="Admission was offered to a Public Health PhD program at Oregon State University with 3 year initial funding. I discontinued the program after Jan 2025 with the kind support of my supervisor Dr. Cynthia Mojica.">
+        <span class="node-year">2024–2025 ~ discontinued after Jan 2025·</span><strong>Public Health</strong><small>OSU admission offer</small>
+      </button>
+      <button class="circuit-node" type="button" aria-expanded="false" data-title="Research and consulting" data-detail="Research assistant and team lead at Psycho-Oncology Lab under Dr.PhuongThao Le, Consultant at NYU Meyers College of Nursing, under Dr. Mattia Gilmartin, Research assistant for NIH grant proposal under Dr. Cynthia Mojica at Oregon State Universiy">
+        <span class="node-year">2023–2025 ·</span><strong>Research & consulting</strong><small>NYU / OSU context</small>
+      </button>
+      
+      <button class="circuit-node" type="button" aria-expanded="false" data-title="Collaborative and independent research" data-detail="Literature synthesis on climate and mental health, evidence synthesis, public-health datasets, and proposed methods under applied machine learning for heterogenous study designs. Registered Study Protocol, Link available under 'Academic outputs- Publications and Manuscript'.  ">
+        <span class="node-year">2025–2026 · </span><strong>Collaborative research</strong><small>Climate change, brain health and causal insights for heterogenous study designs</small>
+      </button>
+      <button class="circuit-node" type="button" aria-expanded="false" data-title="Applied measurement and data projects" data-detail="NIH Grant-proposal">
+        <span class="node-year">CURRENT ·</span><strong>Measurement & data</strong><small>Grant Proposal, Care Quest, AMA Lab NYU </small>
+      </button>
+    </div>
+    <div class="timeline-detail" id="timeline-detail" aria-live="polite"><strong>Explore the timeline</strong><p>Select any node above to see its details.</p></div>
+  </section>
+
+  <section id="coursework" class="section-wrap content-section coursework-section">
+    <div class="section-heading">
+      <p class="eyebrow">03 / ACADEMIC FOUNDATION</p>
+      <h2 data-i18n="courseworkHeading">Coursework and syllabus</h2>
+      <p class="section-description">Course clusters summarize academic foundations. Expand the syllabus sections for more detail; refer to official transcripts for grades and exact course titles.</p>
+    </div>
+    <h3>Biomedical Engineering and mathematics</h3>
+    <div class="course-card-grid">
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show instrumentation and medical technology courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">01</span><span class="course-kicker">INSTRUMENTATION</span><strong>Instrumentation & Medical Technology</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected courses</strong><span>Biomedical Instrumentation Lab; Biomedical Instrumentation II/III</span><span>Medical Imaging I/II and lab; Nuclear Medicine and lab</span><span>Biomedical Microsystems and lab; Lasers and Fiber Optics and lab</span><span>Biomechanics; Prosthesis and Orthosis and associated lab</span><span class="course-card-prompt">Click to return ↻</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show electronics and computing courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">02</span><span class="course-kicker">COMPUTING</span><strong>Electronics, Computing & Signal Processing</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected courses</strong><span>Microprocessors and lab; Analog and Digital Circuits Design and lab</span><span>Biomedical Digital Signal Processing and lab</span><span>Microcontrollers and Embedded Systems and lab</span><span>Digital Image Processing and lab; VLSI and lab</span><span>Networking and Information Systems in Medical Electronics and lab</span><span class="course-card-prompt">Click to return ↻</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show linear algebra topics"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">03</span><span class="course-kicker">APPLIED MATHEMATICS 4</span><strong>Linear Algebra</strong><span class="course-card-prompt">Click to view topics ↻</span></span><span class="course-card-face course-card-back"><strong>Selected topics</strong><span>Vector spaces, metric spaces, norms, inner products, orthogonality</span><span>Gram–Schmidt, eigenvalues and eigenvectors, diagonalization</span><span>Quadratic forms and singular value decomposition</span><span class="course-card-prompt">Full syllabus below ↓</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show calculus topics"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">04</span><span class="course-kicker">APPLIED MATHEMATICS</span><strong>Calculus</strong><span class="course-card-prompt">Click to view topics ↻</span></span><span class="course-card-face course-card-back"><strong>Selected topics</strong><span>Differential and partial differentiation; maxima and minima</span><span>Jacobians, series, ordinary differential equations</span><span>Multiple integrals, numerical integration, Laplace transforms</span><span>Calculus of variations and complex integration</span><span class="course-card-prompt">Full syllabus below ↓</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show statistics courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">05</span><span class="course-kicker">STATISTICS</span><strong>Probability, Statistics & Biostatistics</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected topics</strong><span>Probability, sampling distributions, estimation and confidence intervals</span><span>Hypothesis testing, ANOVA, regression and correlation</span><span>Chi-square tests and undergraduate/graduate biostatistics</span><span class="course-card-prompt">Full syllabus below ↓</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show programming courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">06</span><span class="course-kicker">PROGRAMMING</span><strong>Programming & Statistical Computing</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected courses</strong><span>Structured Programming Approach / C</span><span>Object Oriented Programming and Methodology</span><span>R, Intermediate R, SAS, and Scilab numerical methods</span><span class="course-card-prompt">Full course list below ↓</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show communications and systems courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">07</span><span class="course-kicker">SYSTEMS</span><strong>Communications, Management & Systems</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected courses</strong><span>Principles of Communications Engineering and lab</span><span>Business Communication and Ethics</span><span>Hospital Management and lab</span><span>Biological Modeling and Simulation and lab</span><span class="course-card-prompt">Click to return ↻</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show project work"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">08</span><span class="course-kicker">PROJECT WORK</span><strong>Projects I & II</strong><span class="course-card-prompt">Click to view project ↻</span></span><span class="course-card-face course-card-back"><strong>Fall safety device</strong><span>Project I and Project II included a fall safety device, later patented.</span><span class="course-card-prompt">Click to return ↻</span></span></span></button>
+    </div>
+
+    <div class="syllabus-accordion">
+      <h3>Detailed mathematics and statistics syllabus</h3>
+      <p class="small-note">Real Analysis was not covered under coursework. Other core CS courses such as Data Structures, Analysis of Algorithms, and Operating Systems were not covered in the listed coursework.</p>
+      <details class="syllabus-detail"><summary>Linear Algebra — Applied Mathematics 4</summary><div class="syllabus-content"><ul><li>n-dimensional vector spaces; metric spaces; norms and inner products; orthogonality; Cauchy–Schwarz inequality; Gram–Schmidt orthogonalization.</li><li>Matrix theory; eigenvalues and eigenvectors; Cayley–Hamilton theorem; similarity and diagonalization; functions of square matrices.</li><li>Derogatory and non-derogatory matrices; quadratic forms and canonical forms; rank, index, and signature; Sylvester's law of inertia; definiteness.</li><li>Singular value decomposition (SVD).</li></ul></div></details>
+      <details class="syllabus-detail"><summary>Calculus — Applied Mathematics 1</summary><div class="syllabus-content"><ul><li>Complex numbers and De Moivre's theorem.</li><li>Matrix types, rank, PAQ form, systems of linear equations, Gauss and Gauss–Jordan methods, Crout LU decomposition, Gauss–Seidel and Jacobi methods, and Scilab.</li><li>Higher derivatives and Leibniz theorem; partial derivatives and Euler's theorem.</li><li>Applications of partial differentiation, extrema, Lagrange multipliers, Jacobians, Taylor and Maclaurin series, indeterminate forms, and L'Hôpital's rule.</li><li>Least-squares curve fitting, regression, and Scilab.</li></ul></div></details>
+      <details class="syllabus-detail"><summary>Calculus — Applied Mathematics 2</summary><div class="syllabus-content"><ul><li>Curve tracing and solid geometry; Beta and Gamma functions; differentiation under the integral sign; rectification.</li><li>Exact and linear ordinary differential equations; constant-coefficient equations; Cauchy–Euler homogeneous equations; Legendre equations; variation of parameters and engineering applications.</li><li>Numerical ODE methods: Taylor, Euler, modified Euler, and fourth-order Runge–Kutta.</li><li>Double and multiple integrals in Cartesian, cylindrical, and spherical coordinates; area, mass, and volume applications.</li><li>Interpolation and Newton–Cotes methods; trapezoidal and Simpson rules; Scilab.</li></ul></div></details>
+      <details class="syllabus-detail"><summary>Calculus — Applied Mathematics 3 and 4</summary><div class="syllabus-content"><ul><li>Differential and partial differentiation, maxima and minima, Jacobians, series, ordinary differential equations, multiple integrals, and numerical integration.</li><li>Laplace transforms, properties, inverse Laplace transforms, and applications to ODEs.</li><li>Calculus of variations: Euler–Lagrange equation, isoperimetric problems, higher derivatives, and Rayleigh–Ritz method.</li><li>Complex integration, Cauchy's theorem and formula, Taylor and Laurent series, zeros, singularities, poles, residues, and the residue theorem.</li></ul></div></details>
+      <details class="syllabus-detail"><summary>Probability, statistics, and biostatistics</summary><div class="syllabus-content"><ul><li>Descriptive statistics; probability and Bayes' theorem; binomial, Poisson, and normal distributions.</li><li>Sampling distributions, estimation, confidence intervals, sample sizes, hypothesis tests, Type I and Type II errors, and statistical power.</li><li>ANOVA and study designs; regression and correlation; chi-square goodness-of-fit, independence, and homogeneity tests.</li><li>Graduate public-health biostatistics coursework included linear regression and modeling, categorical data analysis, causal inference, and longitudinal analysis of public-health data.</li></ul></div></details>
+      <details class="syllabus-detail"><summary>Programming and statistical computing</summary><div class="syllabus-content"><ul><li>Structured Programming Approach / C.</li><li>Object Oriented Programming and Methodology.</li><li>R and Intermediate R; SAS.</li><li>Scilab was used in numerical methods coursework.</li></ul><p>Course-specific syllabi for these programming courses were not included in the supplied material.</p></div></details>
+      <details class="syllabus-detail"><summary>Additional biomedical engineering courses</summary><div class="syllabus-content"><ul><li>Biomedical Instrumentation Lab; Biomedical Instrumentation II and III.</li><li>Medical Imaging I and II with labs; Nuclear Medicine with lab.</li><li>Biomedical Microsystems with lab; Lasers and Fiber Optics with lab.</li><li>Biomechanics; Prosthesis and Orthosis and associated lab.</li><li>Microprocessors and lab; Analog and Digital Circuits Design and lab.</li><li>Biomedical Digital Signal Processing and lab; Microcontrollers and Embedded Systems and lab.</li><li>Digital Image Processing and lab; VLSI and lab; Networking and Information Systems in Medical Electronics and lab.</li><li>Principles of Communications Engineering and lab; Business Communication and Ethics; Hospital Management and lab; Biological Modeling and Simulation and lab.</li></ul></div></details>
+    </div>
+  </section>
+
+  <section id="nyu-coursework" class="section-wrap content-section coursework-section">
+    <div class="section-heading">
+      <p class="eyebrow">04 / MS BIOSTATISTICS</p>
+      <h2>Coursework under the thesis-based M.S. in Biostatistics</h2>
+      <p class="section-description">Course clusters are summarized below. Please refer to official transcripts for exact titles and grades.</p>
+    </div>
+    <div class="course-card-grid">
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show public health and epidemiology courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">01</span><span class="course-kicker">PUBLIC HEALTH</span><strong>Public Health & Epidemiology</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected courses</strong><span>Introduction to Public Health</span><span>Epidemiology</span><span>Intermediate Epidemiology</span><span>Thinking Critically and Ethically in Public Health</span><span class="course-card-prompt">Click to return ↻</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show biostatistics core courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">02</span><span class="course-kicker">BIOSTATISTICS CORE</span><strong>Biostatistics & Modeling</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected courses</strong><span>Biostatistics for Public Health</span><span>Regression I: Linear Regression and Modeling</span><span>Regression II: Categorical Data Analysis</span><span>Causal Inference: Design and Analysis</span><span>Longitudinal Analysis of Public Health Data</span><span class="course-card-prompt">Click to return ↻</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show research methods"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">03</span><span class="course-kicker">METHODS & MEASUREMENTS</span><strong>Research Methods</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Research methods</strong><span>Use official transcript and course documentation to add exact course titles and descriptions.</span><span class="course-card-prompt">Confirm course list before publishing</span></span></span></button>
+      <button class="course-flip-card" type="button" aria-expanded="false" aria-label="Show programming courses"><span class="course-card-inner"><span class="course-card-face course-card-front"><span class="card-index">04</span><span class="course-kicker">PROGRAMMING</span><strong>Programming & Statistical Computing</strong><span class="course-card-prompt">Click to view courses ↻</span></span><span class="course-card-face course-card-back"><strong>Selected courses</strong><span>R and Intermediate R</span><span>SAS</span><span class="course-card-prompt">Full course list below ↓</span></span></span></button>
+    </div>
+    <p class="small-note"></p>
+  </section>
+
+  <section id="edx" class="section-wrap content-section">
+    <div class="section-heading">
+      <p class="eyebrow">05 / MOOCS AND EDX</p>
+      <h2>Courses audited on edX</h2>
+      <p class="section-description">Courses taken to bridge interdisciplinary knowledge and build coding skills.</p>
+    </div>
+    <div class="syllabus-accordion">
+      <h3>Audited courses</h3>
+      <details class="syllabus-detail"><summary>View edX course list</summary><div class="syllabus-content"><ul>
+        <li>Data Science: Visualization — HarvardX, 2022</li>
+        <li>Data Science: Probability — HarvardX, 2022</li>
+        <li>Fundamentals of Neuroscience, Part 2: Neurons and Networks — HarvardX</li>
+        <li>Programming for Everybody (Getting Started with Python) — MichiganX, 2022</li>
+        <li>Data Science: Inference and Modeling — HarvardX, 2022</li>
+        <li>Causal Diagrams: Draw Your Assumptions Before Your Conclusions — HarvardX, 2023</li>
+        <li>Fundamentals of Neuroscience, Part 1: The Electrical Properties of the Neuron — HarvardX, 2025</li>
+        <li>CS50's Introduction to Computer Science — HarvardX, 2026</li>
+        <li>CS50's Introduction to Programming with Python — HarvardX, 2026</li>
+      </ul></div></details>
+    </div>
+  </section>
+
+
+      <!-- ADMISSIONS AND FUNDING -->
+      <section id="education-funding" class="section-wrap content-section">
+        <div class="section-heading"><p class="eyebrow">06 / EDUCATION & RECOGNITION</p><h2>Admissions & awards</h2><p class="section-description">A factual overview of study, admissions, funding, and transitions between academic stages.</p></div>
+        <div class="resource-grid">
+         
+          <article class="resource-card"><span class="resource-type">MASTER'S ADMISSION</span><h3>New York University</h3><p>Offered admission to a thesis-based M.S. in Biostatistics; the program was pursued.</p></article>
+          <article class="resource-card"><span class="resource-type">DOCTORAL ADMISSION</span><h3>Oregon State University</h3><p>Offered admission to a funded PhD program in Public Health. The program was discontinued after one term and was not completed.</p><p class="small-note">The reason for discontinuation has not been specified.</p></article>
+          <article class="resource-card"><span class="resource-type">AWARDS</span><h3></h3><ul class="portfolio-list"><li>Indian Government Scholarship · 2022</li><li>New York University Scholarship · 2022</li><li>Oregon State University, College of Health — Graduate Teaching Assistantship · 2024 (offered; not pursued after 1st term)</li></ul></article>
+        </div>
+      </section>
+      <section id="volunteering" class="section-wrap content-section">
+        <div class="section-heading"><p class="eyebrow">07 / COMMUNITY</p><h2>Volunteering & community work</h2><p class="section-description">Community initiatives, mentoring, public speaking, and practical support for nonprofit work.</p></div>
+        <div class="volunteer-list">
+          <article class="volunteer-item"><span class="card-index">01</span><div><h3>Nonprofit organization · Mumbai, India</h3><p>Volunteered with a nonprofit organization registered in Mumbai, India.</p></div></article>
+          <article class="volunteer-item"><span class="card-index">02</span><div><h3>Founder, book review club</h3><p>Founded a book review club to encourage reading and discussion.</p></div></article>
+          <article class="volunteer-item"><span class="card-index">03</span><div><h3>Women's health initiative</h3><p>Ideated and initiated a Women's Health program within the education wing of the nonprofit organization.</p></div></article>
+          <article class="volunteer-item"><span class="card-index">04</span><div><h3>Environmental volunteering</h3><p>Participated in tree-planting drives, including plant maintenance, care, and protection from dry-grass burning.</p></div></article>
+          <article class="volunteer-item"><span class="card-index">05</span><div><h3>Public speaking & personality development</h3><p>Served as a public speaker for personality-development workshops.</p></div></article>
+          <article class="volunteer-item"><span class="card-index">06</span><div><h3>Higher-education mentoring</h3><p>Mentored and guided students pursuing higher education in engineering and related fields.</p></div></article>
+          <article class="volunteer-item"><span class="card-index">07</span><div><h3>Data organization & management</h3><p>Volunteered as a consultant on data organization, collection, and management.</p></div></article>
+          <article class="volunteer-item"><span class="card-index">08</span><div><h3>Food donation drives</h3><p>Occasionally volunteered in food donation drives, including during the COVID-19 period.</p></div></article>
+        </div>
+      </section>
+
+  <section id="skills" class="section-wrap content-section">
+    <div class="section-heading"><p class="eyebrow">08 / TOOLKIT</p><h2 data-i18n="skillsHeading">Skills & methods</h2></div>
+    <div class="skill-grid">
+      <article class="skill-card"><span class="card-index">A</span><h3>Programming & tools</h3><p>Python (Expert), R (Expert), STATA, SQL, C/C++, Excel, HTML/CSS/JavaScript, GitHub, MATLAB, Qualtrics, NetLogo.</p></article>
+      <article class="skill-card"><span class="card-index">B</span><h3>Statistics & research</h3><p>Regression, causal inference, epidemiology, data management, quality checks, literature synthesis, systematic-review methods.</p></article>
+      <article class="skill-card"><span class="card-index">C</span><h3>Machine learning</h3><p>Lasso, Ridge, Elastic Net, decision trees, Random Forest, clustering, model evaluation, and exploratory analysis.</p></article>
+      <article class="skill-card"><span class="card-index">D</span><h3>Communication & collaboration</h3><p>Research communication, writing, organization, adaptability, teamwork, teaching, and explaining quantitative concepts.</p></article>
+    </div>
+    <p class="small-note"></p>
+  </section>
+
+  <section id="research" class="section-wrap content-section">
+    <div class="section-heading"><p class="eyebrow">09 / EVIDENCE</p><h2 data-i18n="researchHeading">Research, publications & data</h2><p class="section-description">A place for scholarly outputs and the materials behind the work.</p></div>
+    <div class="resource-grid">
+      <article class="resource-card"><span class="resource-type">ACADEMIC OUTPUTS</span><h3>Publications & manuscripts</h3><p>Registered a Study Protocol on PROSPERO  ORCID: 0009-0000-1659-5457 </p><a class="text-link" href="https://www.crd.york.ac.uk/PROSPERO/view/CRD420261517470">Publication record ↗</a></article>
+      <article class="resource-card"><span class="resource-type">THESIS</span><h3>Graduate thesis</h3><p>Thesis-based M.S. in Biostatistics at NYU. Add the approved thesis title and a shareable link after confirming access permissions.</p><!-- TODO: Replace href="#" with the public thesis URL before publishing. --><a class="placeholder-link" href="https://docs.google.com/document/d/1_RCFYvaxHVcT6_6Cebbjy5yFlNK2RiGm/edit?usp=sharing&ouid=100165120813151294638&rtpof=true&sd=true" data-link-placeholder="graduate-thesis">Add thesis link in HTML before publishing ↗</a></article>
+      
+  <article class="resource-card">
+    <span class="resource-type">TEACHING VIDEO</span>
+    <h3>Teaching a specific concept</h3>
+    <p>A short video explaining a quantitative, statistical, or technical concept.</p>
+    <!-- TODO: Replace href="#" with the public video URL before publishing. -->
+    <a class="placeholder-link" href="#" data-link-placeholder="teaching-video">Add teaching video link in HTML ↗</a>
+  </article>
+  <article class="resource-card">
+    <span class="resource-type">RESEARCH PRESENTATION</span>
+    <h3>Research presentation video</h3>
+    <p>A recorded presentation of research, a project, or a technical topic.</p>
+    <!-- TODO: Replace href="#" with the public video URL before publishing. -->
+    <a class="placeholder-link" href="#" data-link-placeholder="research-presentation-video">Add research presentation video link in HTML ↗</a>
+  </article>
+      <article class="resource-card"><span class="resource-type">WRITING SAMPLES</span><h3>Selected writing</h3><p>Research summaries, technical writing, literature reviews, and other selected writing samples.</p><!-- TODO: Replace href="#" with the public writing-sample URL before publishing. --><a class="placeholder-link" href="https://drive.google.com/file/d/19CWDGNpEDiAlilySuzEVEu15xoWxhHeR/view?usp=sharing" data-link-placeholder="writing-sample">Add writing sample link in HTML before publishing ↗</a></article>
+    </div>
+  </section>
+
+  <section id="writing" class="section-wrap content-section writing-section">
+    <div class="section-heading"><p class="eyebrow">10 / WRITING & ADVOCACY</p><h2 data-i18n="writingHeading">Beyond technical work</h2></div>
+    <div class="writing-grid">
+      <div><h3>Creative writing</h3><p>I write books under a pen name. Three manuscripts have been developed, and one is currently in the editing stage, with publication planned for the future.</p></div>
+      <div><h3>Statistics advocacy</h3><p>Activities supporting statistical literacy, accessible evidence, and public understanding of data.</p></div>
+      <div><h3>Hobbies & interests</h3><p>Writing and Taekwondo</p></div>
+      <div><h3>Training · 2024</h3><p>Redcross CPR training completed in 2024.</p></div>
+    </div>
+  </section>
+
+
+   <section id="mentors" class="section-wrap content-section">
+        <div class="section-heading"><p class="eyebrow">11 / INTELLECTUAL and INFLUENCES</p><h2>Mentors & influences</h2><p class="section-description">People whose ideas, guidance, and ways of approaching the world have influenced how I think, learn, and communicate.</p><p class="small-note">Add a short, specific note about each person's impact only when you are ready.</p></div>
+        <div class="mentor-groups">
+          <article class="mentor-group"><h3>Intellectual, researcher and leadership influences</h3><ul class="portfolio-list"><li>Dr. Rebecca Betensky</li><li>Dr. Erez Hatna</li><li>Dr. Emily Goldman</li><li>Dr. Brian Spitzer</li><li>Dr. Virginia Chang</li></ul></article>
+          <article class="mentor-group"><h3>Intellectual, Communication and Writing mentors</h3><ul class="portfolio-list"><li>Dr. Adam Alter (active mentorship) - I was fortunate enough to land a zoom meeting with Professor Adam Alter. He was kind enough to guide me through the process of his writing journey. </li><li>Dr. Regina Nuzzo (inspirational mentorship) - I was introduced to Professor Regina Nuzzo's work by Dr. Rebecca Betensky. I am learning from her work.</li></ul></article>
+          <article class="mentor-group"><h3>Community Service and Leadership infleunces</h3><ul class="portfolio-list"><li>Late Dr. Ajay Karve, then Director of a nonprofit organization</li></ul></article>
+          <article class="mentor-group"><h3>Undergraduate program mentors</h3><ul class="portfolio-list"><li>Prof. Nishant Patil</li><li>Prof. Aarti B</li><li>Prof. Preethi A</li><li>Prof. Jyothi S W</li><li>Dr. V K Suri</li><li>Dr. Kundan G (MD)</li></ul></article>
+          <article class="mentor-group"><h3>Primary school through high school</h3><ul class="portfolio-list"><li>Ma’am Nicola D’Souza</li><li>Sister Monica</li><li>Ma’am Celine Lazares</li><li>Ma’am Rouza Khan</li><li>Ma’am Christabelle Alvares</li><li>Sister Jonita</li><li>Ma’am Rhonda</li><li>Ma’am Namrata</li><li>Ma’am Sarita</li><li>Sister Lizzie</li></ul></article>
+        </div>
+      </section>
+
+  <section id="contact" class="section-wrap contact-section">
+    <div><p class="eyebrow">12 / CONTACT</p><h2>Let's connect.</h2><p>For research, data, teaching, or collaboration enquiries, visit the contact page.</p></div>
+    <a class="button button-light" href="en/contact.html">Contact details ↗</a>
+  </section>
+</main>
+<footer class="footer"><span>Professional portfolio</span><span>© 2026 · Shared by direct link</span><a href="#home">Back to top ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
