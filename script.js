@@ -6,7 +6,7 @@ const translations = {
     navHome: "Home", navAbout: "About", navTimeline: "Timeline", navCoursework: "Coursework",
     navSkills: "Skills", navResearch: "Research", navWriting: "Writing", navContact: "Contact",
     heroEyebrow: "RESEARCH · DATA · PEOPLE",
-    heroIntro: "A portfolio bringing together quantitative research, data science, teaching, and writing.",
+    heroIntro: "A portfolio bringing together quantitative research, data science, teaching, and writing.*DECLARATION : AI was used to polish the code used for creating this portfolio",
     exploreJourney: "Explore my journey", getInTouch: "Get in touch ↗",
     aboutHeading: "A multidisciplinary path", timelineHeading: "A connected journey",
     courseworkHeading: "Academic foundation", skillsHeading: "Skills & methods",
